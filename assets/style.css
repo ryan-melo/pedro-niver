@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 42.8rem;
+  border-radius: .5rem;
+  background-color: white;
+  position: relative;
+}
+
+.screen1 {
+  width: 30rem;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.screen1 h1 {
+  font-size: 2.4rem;
+  margin: 0 auto 14.1rem;
+  margin-bottom: 1.4rem;
+}
+
+.screen1 p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.screen1 img {
+  animation: tremer 250ms infinite;
+}
+
+@keyframes tremer {
+0% {
+  transform: translateX(-8px);
+  transform: translateY(8px);
+}
+25% {
+  transform: translateX(8px);
+  transform: translateY(-8px);
+}
+50% {
+  transform: translateY(-8px);
+  transform: translateX(-8px);
+}
+75% {
+  transform: translateY(8px);
+  transform: translateX(8px);
+}
+100% {
+  transform: translateZ(8px);
+}
+}
+
+@keyframes tremer2 {
+0% {
+  transform: translateX(-8px);
+  transform: translateY(8px);
+}
+25% {
+  transform: translateX(8px);
+  transform: translateY(-8px);
+}
+50% {
+  transform: translateY(-8px);
+  transform: translateX(-8px);
+}
+75% {
+  transform: translateY(8px);
+  transform: translateX(8px);
+}
+100% {
+  transform: translateZ(8px);
+}
+}
+
+.screen2 {
+  text-align: center;
+  position: relative;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: centr;
+  padding: 16px;
+
+  width: 174px;
+  height: 52px;
+
+  background: #FF9500;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  margin: auto;
+}
+
+@media (max-width: 680px) {
+.mobile {
+  animation: tremer 250ms 6;
+}
+}
+
+
+canvas {
+  position: absolute;
+}
